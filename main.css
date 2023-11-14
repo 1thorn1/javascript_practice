@@ -1,0 +1,7 @@
+.alert-box{
+    background: blue;
+    color: skyblue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none; /* 1. 미리 디자인해놓고 숨김 */
+}

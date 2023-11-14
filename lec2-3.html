@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>냥냥</title>
+    <link rel = "stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id = "alert">
+        <p>Alert Box</p>
+        <button onclick= "alertButton('none')">닫기</button>
+    </div>
+        <!-- id 부여해주기 -->
+    <!-- UI만드는 법
+    1. 미리 디자인해놓고 숨김
+    2. 버튼 누르거나 하면 보여줌 -->
+    <button onclick = "alertButton('block')">버튼</button>
+    <!-- alert 박스를 display:block으로 바꿈, css에서 display를 none으로 설정했었음 -->
+    
+
+    <!-- 버튼을 누르면 닫히는 코드 작성 -->
+    <script>
+      // function alertBlock(){
+            // document.getElementById('alert').style.display = 'block';
+        // }
+
+
+        //위에서 길게 쓴 코드 함수로 변환함 -> 긴 코드 한 글자로 치환할 때 사용
+        // function alertNone(){
+            // document.getElementById('alert').style.display = 'none';
+        // }
+
+        function alertButton(hole){ //들어가는 곳이 파라미터, 나오는 곳을 똑같은 단어로 지정해주자, 여러 개도 가능
+            document.getElementById('alert').style.display = hole;
+        }
+        //버튼 정의하는 부분에서 파라미터 정해서 넣어줌
+        
+    </script>
+</body>
+
+</html>

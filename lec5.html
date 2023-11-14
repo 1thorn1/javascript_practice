@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>냥냥</title>
+    <link rel = "stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id = "alert">
+        <p id ='title'>Alert Box</p>
+        <button id = "close">x</button>
+    </div>
+
+    <button onclick = "checkIDPW('block', '아이디')">버튼A</button>
+    <button onclick = "checkIDPW('block', '패스워드')">버튼B</button>
+    <script>
+
+        function checkIDPW(여닫, 정보){
+            document.getElementById('alert').style.display = 'block';
+            document.getElementById('title').innerHTML = 정보;
+        }
+
+        document.getElementById('close').addEventListener('click',function(){
+            // 앞의 요소(close라는 id)가 이벤트리스너에 의해 클릭(이벤트)되면
+            // 뒤 코드를 실행해줘 : 알림창이 닫히는 코드를 만들자
+            // document.getElementById('close').style.display = 'none'; 이건 x버튼을 닫는 코드
+            document.getElementById('alert').style.display = 'none';
+
+        })
+    </script>
+</body>
+
+</html>
+

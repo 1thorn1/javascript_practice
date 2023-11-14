@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>냥냥</title>
+    <link rel = "stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id = "alert">
+        <p id ='title'>Alert Box</p> 
+        <!-- p태그의 내용 바꾸기(innerHTML) id값 필요 -->
+        <button onclick="document.getElementById('alert').style.display = 'none'">닫기</button>
+    </div>
+
+    <button onclick = "idCheck()">버튼A</button>
+    <button onclick = "pwCheck()">버튼B</button>
+<!-- 버튼 2개로 각각 열었을 때 alert box를 띄워아이디/비번이 나오게 만들기 -->
+    <script>
+        // 어떤 기준으로 나눌 것인지를 생각하고 작성해야함
+        // block or none이 아닌 버튼 두 개
+        function idCheck(){
+            document.getElementById('alert').style.display = 'block'
+            document.getElementById('title').innerHTML = '아이디'; //지정된 html의 id 내용을 변경
+        }
+
+        
+        function pwCheck(){
+            document.getElementById('alert').style.display = 'block'
+            document.getElementById('title').innerHTML = '패스워드';
+        }
+
+        //function alertButton(hole){ 
+        //    document.getElementById('alert').style.display = hole;
+        //}
+
+        // function alertBox(message){
+            // document.getElementById('alert').innerHTML = message;
+        // }
+
+        // alertBox('아이디');
+        // alertBox('패스워드');
+
+
+
+    </script>
+</body>
+
+</html>
